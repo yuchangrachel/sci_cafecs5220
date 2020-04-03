@@ -1,0 +1,5 @@
+1step: mongo -> use mongooseDB ->db.dropDatabase() 
+2step: /hw4 nodemon ./bin/www  (each time jasmine test,need run again, close all terminal)
+3step: /hw4/bin  node init.js
+4step: use postman
+5step: /hw4 npm test (jasmine test)

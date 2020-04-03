@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="springrest.api.controller.ProgramControllerTest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="getPrograms2"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="setup"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="getPrograms"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="getProgram"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- springrest.api.controller.ProgramControllerTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

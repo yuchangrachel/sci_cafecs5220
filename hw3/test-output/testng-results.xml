@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="0" ignored="0" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4602" started-at="2018-10-25T21:02:17Z" finished-at="2018-10-25T21:02:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4602" started-at="2018-10-25T21:02:17Z" finished-at="2018-10-25T21:02:22Z">
+      <class name="springrest.api.controller.ProgramControllerTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="12" started-at="2018-10-25T21:02:17Z" finished-at="2018-10-25T21:02:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="3690" started-at="2018-10-25T21:02:17Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2018-10-25T21:02:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="setup" is-config="true" duration-ms="72" started-at="2018-10-25T21:02:21Z" finished-at="2018-10-25T21:02:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="189" started-at="2018-10-25T21:02:21Z" finished-at="2018-10-25T21:02:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.addProgram() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="addProgram()[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="addProgram" duration-ms="433" started-at="2018-10-25T21:02:21Z" finished-at="2018-10-25T21:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProgram -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="35" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.addProgram() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.editProgramPass() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="editProgramPass()[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="editProgramPass" duration-ms="38" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProgramPass -->
+        <test-method status="FAIL" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="33" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.editProgramPass() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.springframework.orm.jpa.JpaSystemException">
+            <message>
+              <![CDATA[org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.orm.jpa.JpaSystemException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:401)
+at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:127)
+at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:540)
+at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746)
+at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714)
+at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:131)
+at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:216)
+at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextAfterTestMethod(AbstractTestNGSpringContextTests.java:210)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:65)
+at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:536)
+... 34 more
+Caused by: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:108)
+at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:56)
+at org.hibernate.event.internal.DefaultFlushEntityEventListener.scheduleUpdate(DefaultFlushEntityEventListener.java:299)
+at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:154)
+at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:235)
+at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:94)
+at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:38)
+at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1454)
+at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:511)
+at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3283)
+at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2479)
+at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:178)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271)
+at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:98)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.orm.jpa.JpaSystemException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.getProgram() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getProgram()[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="getProgram" duration-ms="0" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <exception class="org.springframework.orm.jpa.JpaSystemException">
+            <message>
+              <![CDATA[org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.orm.jpa.JpaSystemException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:401)
+at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:127)
+at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:540)
+at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746)
+at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714)
+at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:131)
+at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:216)
+at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextAfterTestMethod(AbstractTestNGSpringContextTests.java:210)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:65)
+at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:536)
+... 34 more
+Caused by: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:108)
+at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:56)
+at org.hibernate.event.internal.DefaultFlushEntityEventListener.scheduleUpdate(DefaultFlushEntityEventListener.java:299)
+at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:154)
+at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:235)
+at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:94)
+at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:38)
+at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1454)
+at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:511)
+at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3283)
+at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2479)
+at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:178)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271)
+at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:98)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.orm.jpa.JpaSystemException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProgram -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="3" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.getProgram() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="17" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.getPrograms() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getPrograms()[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="getPrograms" duration-ms="0" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <exception class="org.springframework.orm.jpa.JpaSystemException">
+            <message>
+              <![CDATA[org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.orm.jpa.JpaSystemException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:401)
+at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:127)
+at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:540)
+at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746)
+at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714)
+at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:131)
+at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:216)
+at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextAfterTestMethod(AbstractTestNGSpringContextTests.java:210)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:65)
+at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:536)
+... 34 more
+Caused by: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:108)
+at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:56)
+at org.hibernate.event.internal.DefaultFlushEntityEventListener.scheduleUpdate(DefaultFlushEntityEventListener.java:299)
+at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:154)
+at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:235)
+at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:94)
+at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:38)
+at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1454)
+at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:511)
+at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3283)
+at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2479)
+at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:178)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271)
+at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:98)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.orm.jpa.JpaSystemException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPrograms -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="13" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.getPrograms() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="5" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.getPrograms2() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getPrograms2()[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="getPrograms2" duration-ms="0" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <exception class="org.springframework.orm.jpa.JpaSystemException">
+            <message>
+              <![CDATA[org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.orm.jpa.JpaSystemException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname; nested exception is javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:401)
+at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:127)
+at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:540)
+at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746)
+at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714)
+at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:131)
+at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:216)
+at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextAfterTestMethod(AbstractTestNGSpringContextTests.java:210)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: javax.persistence.PersistenceException: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:65)
+at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:536)
+... 34 more
+Caused by: org.hibernate.PropertyValueException: not-null property references a null or transient value : springrest.model.Program.fullname
+at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:108)
+at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:56)
+at org.hibernate.event.internal.DefaultFlushEntityEventListener.scheduleUpdate(DefaultFlushEntityEventListener.java:299)
+at org.hibernate.event.internal.DefaultFlushEntityEventListener.onFlushEntity(DefaultFlushEntityEventListener.java:154)
+at org.hibernate.event.internal.AbstractFlushingEventListener.flushEntities(AbstractFlushingEventListener.java:235)
+at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:94)
+at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:38)
+at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1454)
+at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:511)
+at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3283)
+at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2479)
+at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:178)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:39)
+at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:271)
+at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:98)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.orm.jpa.JpaSystemException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPrograms2 -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="3" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void springrest.api.controller.ProgramControllerTest.getPrograms2() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:springrest.api.controller.ProgramControllerTest@28f2a10f]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2018-10-25T21:02:22Z" finished-at="2018-10-25T21:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- springrest.api.controller.ProgramControllerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
